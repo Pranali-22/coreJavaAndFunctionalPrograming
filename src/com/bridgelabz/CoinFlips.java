@@ -7,28 +7,30 @@ import java.util.*;
  * @author Dell
  *
  */
-public class CoinFlips {
+public class LeapYearOrNot {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Random r = new Random();
-		int headCount=0, tailCount=0;
-		int iter=10;
-		for(int i=0;i<iter;i++) {
-			int flip = r.nextInt(2);
-			if(flip==0) {
-				headCount++;
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter year");
+		int year=input.nextInt();
+		
+		if(year>=1000 && year<=9999) {
+			if(year%400==0 || year%4==0 && year%100!=0) {
+				System.out.println(year+" is a leap year");
 			}
 			else {
-				tailCount++;
+				System.out.println(year+" is not a leap year");
 			}
 		}
-				
-		System.out.println("Percentage of head = "+ (float)headCount*100/iter);
-		System.out.println("Percentage of tail = "+ (float)tailCount*100/iter);
+		
+		else {
+			System.out.println("Enter 4 digit year");
+		}
+		
+		input.close();
 
 	}
 
