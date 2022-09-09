@@ -7,7 +7,7 @@ import java.util.*;
  * @author Dell
  *
  */
-public class AlphabetOrConsolnant {
+public class VowelOrConsonant {
 
 	/**
 	 * @param args
