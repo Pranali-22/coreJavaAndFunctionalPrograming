@@ -18,7 +18,15 @@ public class CalculatePowerOf2 {
 		System.out.println("Enter number");
 		int number=input.nextInt();
 		
-		System.out.println("Power of 2 of "+ number + " = "+ Math.pow(number, 2));
+		if(number>=0 && number<=31) {
+			for(int i=1;i<=number;i++) {
+				System.out.println((int) Math.pow(2, i));
+			}
+		}
+		else {
+			System.out.println("Enter valid value of number");
+		}
+		
 	}
 
 }
