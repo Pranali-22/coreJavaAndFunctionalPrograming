@@ -12,6 +12,7 @@ public class CoinFlips {
 	/**
 	 * @param args
 	 */
+	//Refactor
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Random r = new Random();
